@@ -1,4 +1,115 @@
-body {
+@import url('httpsL//fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: "poppings", sans-serif;
+}
+
+
+body{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to rigt, #8f94fb, #4e54);
+    background-color: #8f94fb;
+
+}
+
+
+.container{
+    width: 700px;
+    display: flex;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-sizing: 5px 10px 30px rgba(0,0,0,0.5); 
+    outline: 8px solid lightseagreen;
+    /* border-radius: inherit; */
+    
+}
+
+.image{
+    background-color: lightseagreen;
+}
+
+
+.content{
+    padding: 10px;
+    margin-top: 60px;
+    border-radius: 10px;
+}
+
+
+h3{
+    text-align: center;
+    color: lightseagreen;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+input{
+    width: 200px;
+    display: flex;
+    font-size: 16px;
+    margin: 40px;
+    color: black;
+    border: none; 
+    outline: none;
+    border-bottom: 2px solid lightseagreen;
+}
+
+
+ input[type]::placeholder{
+    color: black; 
+    font-size: 16px;
+ }
+
+
+ button{
+    width: 120px;
+    height: 35px;
+    color: #fff;
+    background-color: lightseagreen;
+    font-size: 18px;
+    display: flex;
+    margin: auto;
+    padding: 5px 38px;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer0;
+    transition: .2s ease-in-out;
+ }
+
+
+ button:hover{
+    color: lightseagreen;
+    background-color: #fff;
+    font-weight: bold;
+    outline: 2px solid lightseagreen;
+ }
+
+
+ p{
+    color: lightseagreen;
+    font-size: 18px;
+    margin-top: 30px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+ }
+
+
+
+
+
+
+
+/* body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,7 +121,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: plum;
+    background-color: #f5f5f5;
     border-radius: 5px;
     padding: 20px;
     width: 100%;
@@ -43,11 +154,11 @@ body {
 .image-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: rigt;
     width: 50%;
 }
 
 .image-container img {
     width: 100%;
     height: auto;
-}
+} */
