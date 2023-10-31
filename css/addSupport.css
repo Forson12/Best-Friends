@@ -1,0 +1,13 @@
+.container{
+    background-color:white ;
+    width: 80;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.add-group{
+    background-color: #9fcfd3ff;
+    float:right;
+}

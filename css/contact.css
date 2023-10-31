@@ -1,0 +1,30 @@
+.container{
+    background-color:white ;
+    width: 80;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+.image1{
+    height: 50px;
+  width: 50px;
+  margin-top: 75px; 
+}
+.image2{
+    height: 50px;
+  width: 50px;
+  margin-top: 75px; 
+}
+.image3{
+    height: 50px;
+  width: 50px;
+  margin-top: 75px; 
+}
+.submit-button{
+    background-color: #9fcfd3ff;
+    float:right;
+}
+
