@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 20;
-    font-family: Arial, sans-serif;
+    font-family:Arial, sans-serif;
     background-color: aliceblue;
     display: flex;
     justify-content: center;
@@ -9,26 +9,41 @@ body {
     height: 100vh;
 }
 
+
+
+
 .top-header {
+    margin: 20px;
+    font-family:Arial, sans-serif;
+
+
+    position: absolute;
+    top: 0;
+    left: 0;
     color: black; /* You can change the text color as needed */
-    text-align: center; /* Center the text horizontally */
+    text-align: left; /* Center the text horizontally */
     padding: 20px; /* Add some padding for spacing */
+   
 }
 
-.left-section,
-.right-section {
-    width: 40%;
+
+
+.left-section, .rigth-section {
     display: inline-block;
     padding: 20px;
 }
 
 .left-section {
+    width:40%; 
     text-align: left;
+    flex: left;
 }
 
-.right-section {
-    text-align: right;
+.rigth-section {
+    width:40%; 
+    flex: right;
 }
+
 
 h2 {
     margin-top: 0;
@@ -42,11 +57,10 @@ h2 {
 
 label {
     font-weight: bold;
-    color: #555;
+    color: #555
 }
 
-input,
-textarea {
+input, textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -54,7 +68,7 @@ textarea {
     outline: none;
 }
 
-button {
+button{
     padding: 10px;
     background-color: #007bff;
     color: #fff;
@@ -63,7 +77,17 @@ button {
     cursor: pointer;
 }
 
+
 input[type="file"] {
     padding: 10px 0;
     height: auto;
 }
+
+
+
+
+
+
+
+
+
