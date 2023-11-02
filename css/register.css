@@ -1,22 +1,21 @@
-.container{
+.container {
     display: flex;
     column-gap: normal;
     justify-content: center;
     height: 100vh;
 }
 
-
-.register{
+.register {
     height: 500px;
     width: 500px;
-    background-color:white;
+    background-color: white;
     text-align: center;
 }
 
-.boxImg{
+.boxImg {
     height: 500px;
     width: 500px;
-    background-color: beige;   
+    background-color: beige;
 }
 
 h1 {
@@ -32,7 +31,7 @@ input {
     margin: 10px;
 }
 
-.registerButton{
+.registerButton {
     padding: 10px 75px;
     background-color: #c6bee7;
     color: #fff;
@@ -41,7 +40,7 @@ input {
     cursor: pointer;
 }
 
-.registerButton{
+.registerButton {
     background-color: #c6bee7;
 }
 
@@ -58,5 +57,3 @@ a {
 a:hover {
     text-decoration: underline;
 }
-
-
