@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/kobiTryout.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Organization Information</h2>
+                <form action="process_form.php" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="name">Organization Name:</label>
+                        <input type="text" class="form-control" id="name" name="name" required placeholder="Enter Organization Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required placeholder="Enter Email Address">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telephone Number:</label>
+                        <input type="tel" class="form-control" id="phone" name="phone" required placeholder="Enter Telephone Number">
+                    </div>
+                    <div class="form-group">
+                        <label for="socials">Social Media Links:</label>
+                        <input type="text"  id="socials" name="socials" required placeholder="Enter Social Media Links">
+                    </div>
+                    </form>
+            </div>
+            <div class="col-md-6">
+                <h2>More Details</h2>
+                <div class="form-group">
+                    <label for="description">Description:</label>
+                    <textarea class="form-control" id="description" name="description" rows="8" required placeholder="Enter Support Initiative Description"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="logo">Logo:</label>
+                    <input type="file" class="form-control-file" id="logo" name="logo" accept="image/*" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Start Providing Support</button>
+            </div>
+        </div>
+     </div>
+</body>  >
+
+
+<!-- Without Bootstrap -->
+ <!-- <body>
+    <div class="left-section">
+        <h2>Organization Information</h2>
+        <form action="process_form.php" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name">Organization Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Telephone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="socials">Social Media Links:</label>
+                <input type="text" id="socials" name="socials" required>
+            </div>
+        </form>
+    </div>
+    <div class="right-section">
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="12" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="logo">Logo:</label>
+            <input type="file" id="logo" name="logo" accept="image/*" required>
+        </div>
+    </div>
+</body>  -->
+
+
+
+<!-- With Flex below -->
+
+<!-- <body>
+    <div class="container">
+        <div class="left-section">
+            <h2>Organization Information</h2>
+            <form action="process_form.php" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="name">Organization Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name "email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telephone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="socials">Social Media Links:</label>
+                    <input type="text" id="socials" name="socials" required>
+                </div>
+            </form>
+        </div>
+        <div class="space"></div>
+        <div class="right-section">
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="8" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="purpose">Purpose:</label>
+                <textarea id="purpose" name="purpose" rows="8" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="logo">Logo:</label>
+                <input type="file" id="logo" name="logo" accept="image/*" required>
+            </div>
+        </div>
+    </div>
+</body> -->
+
+</html>
