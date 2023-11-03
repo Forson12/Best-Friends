@@ -1,55 +1,19 @@
-.left-section2 {
-    border: 1px solid #ccc;
-    float:left;
-    left: left;
-    border-radius: 10px;
-    width:50%; 
-    height: 100%;
-    text-align: left;
-}
-
-.right-section2 { 
-    border: 1px solid #ccc;
-    float: right;
-    left: right;
-    border-radius: 10px;
-    width:50%; 
-    height: 100%;
-
-    text-align: left;
-}
-
-
-.section-right-center {
-   
-    align-content: center;
-}
-
-.section2 {
-    align-content: center;
-    width:92%; 
-    margin: 10px;
-    padding: 10px;
-    float: right;
-    border-radius: 10px;
-
-}
-
-
-
 .left-section1{
-    margin: 20px;
-    padding: 10px;
+    margin: 5px 2px 5px 2px;
+    padding: 20px;
     float: left;
     border-radius: 10px;
     width:40%; 
-    text-align: left;
+    text-align: left; 
+    justify-content: center;
+    align-items: center;
 }
+
 
 .right-section1 {
     border: 1px solid #ccc;
-    margin: 20px;
-    padding: 10px;
+    margin: 5px 2px 5px 2px;
+    padding: 20px;
     float: left;
     border-radius: 10px;
     width:40%; 
@@ -58,28 +22,85 @@
 }
 
 
+
 .section{
     width:92%; 
     border: 1px solid #ccc;
     margin: 10px;
     padding: 10px;
-    float: right;
     border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+
 }
 
 
+.section-right-left {
+    width:95%; 
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+   
+}
+
+
+.left-section2 {
+    border: 1px solid #ccc;
+    float:left;
+    left: left;
+    border-radius: 10px;
+    width:50%; 
+    height: 100%;
+    padding:10px;
+    text-align: left;
+}
+
+
+
+.right-section2 { 
+    border: 1px solid #ccc;
+    float: right;
+    left: right;
+    border-radius: 10px;
+    width:50%; 
+    height: 100%;
+    padding: 10px;
+    text-align: left;
+}
+
+
+
+.section2 {
+    align-content: center;
+    width:95%; 
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    display: block;
+}
 
 
 .section-btn {
     width:92%; 
     margin: 20px;
     padding: 5px;
-    float: left;
     text-align: center;
     background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
 
 }
