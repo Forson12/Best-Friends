@@ -1,0 +1,78 @@
+/* Reset some default browser styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* Style the navigation bar */
+.navbar {
+    background-color: #800080;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Style the organization information section */
+h2 {
+    color: #333;
+}
+
+/* Style the image */
+.top-section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Style the user's details section */
+.details-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+details-box h2 {
+    color: #333;
+    margin-top: 0;
+}
+
+details-box p {
+    color: #555;
+}
+
+/* Add CSS to create a margin for the top section */
+.space {
+    margin-bottom: 20px; /* Adjust the margin as needed */
+}
