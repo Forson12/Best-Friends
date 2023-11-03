@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
+    <link rel="stylesheet" type= "text/css" href="../css/displaySupportInfo.css">
+
+
+    <title>More About <?= $fila['name'] ?> </title>
+    
+</head>
+<body>
+    <h1> !!!!! NAME OF THE SUPPORT</h1>
+
+    <div class="left-section2">
+            
+    </div>
+
+    <div class="right-section">
+        <div class = "section">     
+            <label for="location"> <strong> Location </strong> </label>
+            
+        </div>
+
+        <div class = "section">     
+            <label for="date"> <strong> Date </strong> </label>
+            
+        </div>
+
+        <div class = "left-section">     
+            <label for="start time"> <strong> Start Time </strong> </label>
+            
+        </div>
+
+        <div class = "right-section">  
+            <label for="end time"> <strong> End Time </strong> </label>
+   
+            
+        </div>
+
+        <div class = "section">
+            <label for="attendees"> Attendees</label>
+            <input type="number" id="attendees" name="attendees" min="1" max="100" required placeholder="1"/> <!-- max: replace by amount left-->
+
+        </div>
+
+        <div class = "section">
+                        
+            <label for="reservation name"> Reservation Name </label>
+            <input type="text" class = form-control id="res_name" name="res_name" required placeholder="Enter Reservation Name"> 
+            
+        </div>
+
+                
+        <div class="section-btn">
+            <button type="reserve" class="btn btn-primary"> Reserve</button>
+        </div>
+
+    </div>
+        
+</div>
+
+
+    <!--<?php
+    }
+    ?> -->
+</body>
+</html>
+
+
+<!--
+<?php
+$conexion->close();
+?>
+-->

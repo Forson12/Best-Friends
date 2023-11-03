@@ -1,0 +1,43 @@
+.left-section, .right-section {
+    border: 1px solid #ccc;
+    margin: 20px;
+    padding: 10px;
+    float: left;
+    border-radius: 10px;
+    width:40%; 
+    flex: left;
+    text-align: left;
+}
+
+.left-section2{
+    margin: 20px;
+    padding: 10px;
+    float: left;
+    border-radius: 10px;
+    width:40%; 
+    text-align: left;
+}
+
+
+.section{
+    width:85%; 
+    border: 1px solid #ccc;
+    margin: 20px;
+    padding: 10px;
+    float: left;
+    border-radius: 10px;
+}
+
+.section-btn {
+    width:85%; 
+    margin: 20px;
+    padding: 5px;
+    float: left;
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}

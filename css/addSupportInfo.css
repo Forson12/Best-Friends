@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 20;
+    font-family:Arial, sans-serif;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+
+.top-header {
+    margin: 20px;
+    font-family:Arial, sans-serif;
+
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: black; /* You can change the text color as needed */
+    text-align: left; /* Center the text horizontally */
+    padding: 20px; /* Add some padding for spacing */
+   
+}
+
+
+
+.left-section, .rigth-section {
+    display: inline-block;
+    padding: 20px;
+}
+
+.left-section {
+    width:40%; 
+    text-align: left;
+    flex: left;
+}
+
+.rigth-section {
+    width:40%; 
+    flex: right;
+}
+
+
+h2 {
+    margin-top: 0;
+    color: black;
+}
+
+.form-group {
+    margin: 20px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    color: #555
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+button{
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+input[type="file"] {
+    padding: 10px 0;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+

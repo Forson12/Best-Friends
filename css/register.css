@@ -1,0 +1,59 @@
+.container {
+    display: flex;
+    column-gap: normal;
+    justify-content: center;
+    height: 100vh;
+}
+
+.register {
+    height: 500px;
+    width: 500px;
+    background-color: white;
+    text-align: center;
+}
+
+.boxImg {
+    height: 500px;
+    width: 500px;
+    background-color: beige;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 80%;
+    padding: 15px;
+    border: 1px solid #c6bee7;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+.registerButton {
+    padding: 10px 75px;
+    background-color: #c6bee7;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.registerButton {
+    background-color: #c6bee7;
+}
+
+p {
+    margin-top: 20px;
+    font-style: italic;
+}
+
+a {
+    color: #00eeff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
