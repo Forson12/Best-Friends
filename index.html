@@ -1,38 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index Page</title>
-    <link rel="stylesheet" href="css/index.css">
+    <title>Header and Search Bar</title>
+    <link rel="stylesheet" href="../Best-Friends/css/index.css">
 </head>
-
 <body>
-    
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="pages\aboutUs.html">About</a></li>
-                <li><a href="/pages/contact.html">Contact</a></li>
-                <li><a href="pages/login.html">Login</a></li>
-                <li><a href="pages/addSupport.html">Add Support</a></li>
 
-            </ul>
-        </nav>
-    </header>
+<header>
+    <div class="header-left">
+        <a><img class="logo" src="../Best-Friends/Images/logo.png"></a>
+        <h1 style="display: inline; align-items: center; font-size: 20px;">Alturo</h1>
+    </div>
+    <nav class="header-right">
+        <a href="../Best-Friends/pages/aboutUs.html">About us</a>
+        <a href="../Best-Friends/pages/contact.html">Contact Us</a>
+        <a href="../Best-Friends/pages/login.html">Login</a>
+        <!-- Add more links as needed -->
+    </nav>
+</header>
 
-    <main>
-        <section>
-            <h1>Welcome to Our Website!</h1>
-            <p>We offer a centralised online platform for people to find and refer support in their local area. We provide bespoke research and marketing for organisations actively or seeking to set up groups in their chosen area.</p>
-        </section>
-    </main>
+<div class="search-bar">
+    <input type="text" placeholder="Search...">
+    <select>
+        <option value="" disabled selected>Filter By</option>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <!-- Add more filter options -->
+    </select>
+    <select>
+        <option value="" disabled selected>Sort By</option>
+        <option value="sort1">Sort 1</option>
+        <option value="sort2">Sort 2</option>
+        <!-- Add more sort options -->
+    </select>
+    <button type="button">Search</button>
+</div>
 
-    <footer>
-        <p>&copy; 2023 Our Website. All rights reserved.</p>
-    </footer>
+<div class="group-container">
+    <div class="group">
+        <div class="groupContent">
+            <img class="groupImg" src="../Best-Friends/Images/img8.jpg" alt="Group 1 Image">
+        </div>
+        <div class="groupContent">
+            <h3>Group 1</h3>
+            <p>Description of Group 1</p>
+        </div>
+    </div>
+    <div class="group">
+        <div class="groupContent">
+            <img class="groupImg" src="../Best-Friends/Images/img8.jpg" alt="Group 2 Image">
+        </div>
+        <div class="groupContent">
+            <h3>Group 2</h3>
+            <p>Description of Group 2</p>
+        </div>
+    </div>
+    <div class="group">
+        <div class="groupContent">
+            <img class="groupImg" src="../Best-Friends/Images/img8.jpg" alt="Group 2 Image">
+        </div>
+        <div class="groupContent">
+            <h3>Group 3</h3>
+            <p>Description of Group 3</p>
+        </div>
+    </div>
+    <!-- Add more groups as needed -->
+</div>
+
 </body>
-
 </html>
