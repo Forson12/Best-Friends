@@ -1,7 +1,19 @@
-.left-section, .right-section {
+.left-section1{
+    margin: 5px 2px 5px 2px;
+    padding: 20px;
+    float: left;
+    border-radius: 10px;
+    width:40%; 
+    text-align: left; 
+    justify-content: center;
+    align-items: center;
+}
+
+
+.right-section1 {
     border: 1px solid #ccc;
-    margin: 20px;
-    padding: 10px;
+    margin: 5px 2px 5px 2px;
+    padding: 20px;
     float: left;
     border-radius: 10px;
     width:40%; 
@@ -9,35 +21,86 @@
     text-align: left;
 }
 
-.left-section2{
-    margin: 20px;
+
+
+.section{
+    width:92%; 
+    border: 1px solid #ccc;
+    margin: 10px;
     padding: 10px;
-    float: left;
     border-radius: 10px;
-    width:40%; 
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+
+}
+
+
+.section-right-left {
+    width:95%; 
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+   
+}
+
+
+.left-section2 {
+    border: 1px solid #ccc;
+    float:left;
+    left: left;
+    border-radius: 10px;
+    width:50%; 
+    height: 100%;
+    padding:10px;
     text-align: left;
 }
 
 
-.section{
-    width:85%; 
+
+.right-section2 { 
     border: 1px solid #ccc;
-    margin: 20px;
-    padding: 10px;
-    float: left;
+    float: right;
+    left: right;
     border-radius: 10px;
+    width:50%; 
+    height: 100%;
+    padding: 10px;
+    text-align: left;
 }
 
+
+
+.section2 {
+    align-content: center;
+    width:95%; 
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    display: block;
+}
+
+
 .section-btn {
-    width:85%; 
+    width:92%; 
     margin: 20px;
     padding: 5px;
-    float: left;
     text-align: center;
     background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
 
 }
