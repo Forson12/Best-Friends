@@ -21,7 +21,7 @@ body {
     padding: 0;
 }
 
-header {
+/* header {
     background-color: #333;
     color: #fff;
     padding: 1rem 0;
@@ -39,7 +39,48 @@ header nav ul li {
 header nav ul li a {
     color: #fff;
     text-decoration: none;
+} */
+
+/* Header */
+header {
+    background-color: lightseagreen;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 5px;
+    padding: 20px;
+    
 }
+
+/* Navigation */
+.header-left a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 0px;
+}
+
+.header-right a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+.header-right a:hover {
+    color: #1500ff; 
+    text-decoration: underline; 
+}
+
+
+.logo {
+    height:30px;
+    width:30px;
+    padding:0px;
+    margin:0%;
+}
+
+
 
 main {
     margin: 2rem;
@@ -81,7 +122,7 @@ main {
 }
 
 footer {
-    background-color: #333;
+    background-color:  lightseagreen;
     color: #fff;
     text-align: center;
     padding: 1rem 0;

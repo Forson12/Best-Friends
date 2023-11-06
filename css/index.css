@@ -1,5 +1,5 @@
 
-
+/* Header */
 header {
     background-color: lightseagreen;
     color: #fff;
@@ -8,8 +8,11 @@ header {
     align-items: center;
     padding: 15px;
     border-radius: 5px;
+    padding: 20px;
+    
 }
 
+/* Navigation */
 .header-left a {
     color: #fff;
     text-decoration: none;
@@ -20,15 +23,25 @@ header {
     color: #fff;
     text-decoration: none;
     margin-left: 20px;
+    transition: color 0.3s;
+}
+.header-right a:hover {
+    color: #1500ff; /* Change to your preferred hover color */
+    text-decoration: underline; /* Add an underline on hover */
 }
 
 
+/* Search Bar */
 .search-bar {
     margin-top: 20px;
     margin-left: 0px;
     display: flex;
     align-items: center;
+    background-color: lightpink; 
+    padding: 10px; 
+
 }
+
 
 input[type="text"] {
     padding: 8px;
@@ -57,7 +70,7 @@ button {
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
-    display:grid;
+    display:flex;
 }
 
 .groupContent {
@@ -66,6 +79,13 @@ button {
     text-align: left;
     padding: 5px;
 }
+
+.groupImg {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px; /* Adjust to your preferred border radius */
+}
+
 
 /* .group img {
     width: 100%;
@@ -88,3 +108,5 @@ button {
     padding:0px;
     margin:0%;
 }
+
+
