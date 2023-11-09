@@ -10,10 +10,41 @@
     height: 100vh;
     
     }
+    /* Header */
+header {
+  background-color: lightseagreen;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 5px;
+  padding: 20px;
+  
+}
+
+/* Navigation */
+.header-left a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 0px;
+}
+
+.header-right a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: color 0.3s;
+}
+.header-right a:hover {
+  color: #1500ff; /* Change to your preferred hover color */
+  text-decoration: underline; /* Add an underline on hover */
+}
     .PageText{
-      position: absolute;
+      /*position: absolute;
       top: 0;
-      left: 0;
+      left: 0;*/
+      text-align: center;
 
     }
     .leftContainer{
