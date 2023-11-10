@@ -74,11 +74,15 @@ body{
     text-align: left; 
     justify-content: center;
     align-items: center;
+
 }
 
 
 .right-section1 {
     border: 1px solid #ccc;
+    background-color: #fff;
+
+
     margin: 5px 2px 5px 2px;
     padding: 20px;
     float: left;
@@ -91,6 +95,8 @@ body{
 
 
 .section{
+    background-color: white;
+
     width:92%; 
     border: 1px solid #ccc;
     margin: 10px;
@@ -154,6 +160,43 @@ body{
     text-align: left;
 }
 
+.section-btn {
+    width:92%; 
+    height: 40px;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    background-color: #c6bee7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+
+.btn-reserve {
+    width:92%; 
+    margin: 20px;
+    padding: 5px;
+    text-align: center;
+    background-color: #c6bee7;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+
+}
+
+
+
 
 
 .right-section2 { 
@@ -188,35 +231,21 @@ body{
 
 
 .image {
-    
-    height:300px;
-    width:100%;
+    height: 400px;
+    width:700px;
     padding:0px;
     margin:0%;
-}
-
-
-.btn-reserve {
-    width:92%; 
-    margin: 20px;
-    padding: 5px;
-    text-align: center;
-    background-color: #c6bee7;
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
+    display: block;
     margin-left: auto;
     margin-right: auto;
-    display: block;
+}
 
-
+.bottom-section {
+    display: flex;
+    justify-content: center;
 }
 
 
-.btn-reserve {
-    background-color: #c6bee7;
-}
 
 
 

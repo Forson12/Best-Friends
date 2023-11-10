@@ -50,7 +50,10 @@ h1 {
     margin-bottom: 20px;
 }
 
-
+.bottom-section{
+    display: flex;
+    justify-content: center;
+}
 
 
 
@@ -167,7 +170,8 @@ button{
 .btn-submit {
     background-color: #c6bee7;
     
-    width:92%; 
+    width:82%; 
+    height: 45px;
     margin: 20px;
     padding: 5px;
     text-align: center;
@@ -192,6 +196,14 @@ input[type="file"] {
 
 
 
+/* Footer */
+footer {
+    background-color:  lightseagreen;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
 
 
 
