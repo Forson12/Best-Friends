@@ -20,6 +20,7 @@ header {
   padding: 15px;
   border-radius: 5px;
   padding: 20px;
+  margin-bottom: 60px ;
   
 }
 
@@ -124,4 +125,17 @@ header {
     float:right;
 }
 
+body{
+  background-color: #D3D3D3;
+}
 
+
+
+
+/* Footer */
+footer {
+  background-color:  lightseagreen;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}

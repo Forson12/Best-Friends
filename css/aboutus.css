@@ -71,6 +71,9 @@ header {
     color: #1500ff; 
     text-decoration: underline; 
 }
+body{ 
+    background-color: #D3D3D3;
+}
 
 
 .logo {
