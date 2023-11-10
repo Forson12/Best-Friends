@@ -60,48 +60,56 @@ header {
 /* Navigation */
 
 
-}
-
 /* Navigation */
+
 .header-left a {
     color: #fff;
     text-decoration: none;
     margin-left: 0px;
 }
+
 .header-right a {
     color: #fff;
     text-decoration: none;
     margin-left: 20px;
     transition: color 0.3s;
 }
+
 .header-right a:hover {
     color: #1500ff;
     text-decoration: underline;
 }
+
 body {
     background-color: #D3D3D3;
 }
+
 .logo {
     height: 30px;
     width: 30px;
     padding: 0px;
     margin: 0%;
 }
+
 main {
     margin: 2rem;
 }
+
 #about-us {
     text-align: center;
     padding: 2rem;
 }
+
 #about-us h1 {
     font-size: 2rem;
 }
+
 #team {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
 .team-member {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -110,15 +118,18 @@ main {
     text-align: center;
     width: 300px;
 }
+
 .team-member img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     margin: 1rem 0;
 }
+
 .team-member h3 {
     font-size: 1.5rem;
 }
+
 footer {
     background-color: lightseagreen;
     color: #fff;
