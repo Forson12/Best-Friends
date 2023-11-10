@@ -1,3 +1,47 @@
+/* Navigation */
+.header-left a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 0px;
+}
+
+.header-right a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+.header-right a:hover {
+    color: #1500ff; /* Change to your preferred hover color */
+    text-decoration: underline; /* Add an underline on hover */
+}
+
+/* Header */
+header {
+    background-color: lightseagreen;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 70px;
+}
+
+
+body{
+    background-color: whitesmoke;
+}
+
+
+.logo {
+    height:30px;
+    width:30px;
+    padding:0px;
+    margin:0%;
+}
+
 .container {
     display: flex;
     column-gap: normal;
@@ -56,4 +100,12 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color:  lightseagreen;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
 }

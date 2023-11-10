@@ -13,9 +13,11 @@ body{
     justify-content: center;
     align-items: center;
     background: linear-gradient(to rigt, #8f94fb, #4e54);
-    background-color: #8f94fb;
+    /* background-color: #8f94fb; */
+    background-color: #899499;
 
 }
+
 
 
 .container{
@@ -92,6 +94,8 @@ input{
     font-weight: bold;
     outline: 2px solid lightseagreen;
  }
+ 
+
 
 
  p{
@@ -102,11 +106,6 @@ input{
     font-weight: bold;
     cursor: pointer;
  }
-
-
-
-
-
 
 
 /* body {
