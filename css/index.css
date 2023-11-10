@@ -31,7 +31,7 @@ header {
 }
 
 body{
-    background-color: #D3D3D3;
+    background-color: whitesmoke; 
 }
 
 
@@ -50,7 +50,7 @@ footer {
     margin-left: 0px;
     display: flex;
     align-items: center;
-    background-color: lightpink; 
+    background-color: #f18c8a; 
     padding: 10px; 
 
 }

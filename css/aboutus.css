@@ -19,6 +19,7 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    background-color: whitesmoke;
 }
 
 /* header {
@@ -71,9 +72,7 @@ header {
     color: #1500ff; 
     text-decoration: underline; 
 }
-body{ 
-    background-color: #D3D3D3;
-}
+
 
 
 .logo {
