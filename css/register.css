@@ -1,4 +1,5 @@
 /* Navigation */
+
 .header-left a {
     color: #fff;
     text-decoration: none;
@@ -11,12 +12,17 @@
     margin-left: 20px;
     transition: color 0.3s;
 }
+
 .header-right a:hover {
-    color: #1500ff; /* Change to your preferred hover color */
-    text-decoration: underline; /* Add an underline on hover */
+    color: #1500ff;
+    /* Change to your preferred hover color */
+    text-decoration: underline;
+    /* Add an underline on hover */
 }
 
+
 /* Header */
+
 header {
     background-color: lightseagreen;
     color: #fff;
@@ -29,17 +35,15 @@ header {
     margin-bottom: 70px;
 }
 
-
-body{
-    background-color: #D3D3D3;
+body {
+    background-color: #B2B1D8;
 }
 
-
 .logo {
-    height:30px;
-    width:30px;
-    padding:0px;
-    margin:0%;
+    height: 30px;
+    width: 30px;
+    padding: 0px;
+    margin: 0%;
 }
 
 .container {
@@ -67,6 +71,9 @@ h1 {
     margin-bottom: 20px;
 }
 
+
+/*design for the form labels*/
+
 input {
     width: 80%;
     padding: 15px;
@@ -85,7 +92,7 @@ input {
 }
 
 .registerButton {
-    background-color: #c6bee7;
+    background-color: #F18382;
 }
 
 p {
@@ -94,7 +101,7 @@ p {
 }
 
 a {
-    color: #00eeff;
+    color: #F18382;
     text-decoration: none;
 }
 
@@ -102,9 +109,11 @@ a:hover {
     text-decoration: underline;
 }
 
+
 /* Footer */
+
 footer {
-    background-color:  lightseagreen;
+    background-color: lightseagreen;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
