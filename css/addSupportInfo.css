@@ -1,12 +1,84 @@
-body {
+
+p {
+    margin-top: 20px;
+    font-style: italic;
+}
+
+
+a {
+    color: #00eeff;
+    text-decoration: none;
+}
+
+
+/* Header */
+header {
+    background-color: lightseagreen;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 70px;
+}
+
+
+.header-left a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 0px;
+}
+
+.header-right a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+
+.header-right a:hover {
+    color: #1500ff; /* Change to your preferred hover color */
+    text-decoration: underline; /* Add an underline on hover */
+}
+
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+.logo {
+    height:30px;
+    width:30px;
+    padding:0px;
+    margin:0%;
+}
+
+
+
+
+
+body2 {
     margin: 0;
     padding: 20;
     font-family:Arial, sans-serif;
-    background-color: aliceblue;
+    background-color: whitesmoke;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+body{
+    background-color: whitesmoke;
+
 }
 
 
@@ -28,21 +100,35 @@ body {
 
 
 
-.left-section, .rigth-section {
-    display: inline-block;
-    padding: 20px;
-}
+
+
 
 .left-section {
+    margin: 5px 2px 5px 2px;
+    padding: 20px;
+    float: left;
+    border-radius: 10px;
     width:40%; 
-    text-align: left;
-    flex: left;
+    text-align: left; 
+    justify-content: center;
+    align-items: center;
 }
 
-.rigth-section {
+
+.right-section {
+    margin: 5px 2px 5px 2px;
+    padding: 20px;
+    float: left;
+    border-radius: 10px;
     width:40%; 
-    flex: right;
+    flex: left;
+    text-align: left;
 }
+
+
+
+
+
 
 
 h2 {
@@ -76,6 +162,26 @@ button{
     border-radius: 5px;
     cursor: pointer;
 }
+
+
+.btn-submit {
+    background-color: #c6bee7;
+    
+    width:92%; 
+    margin: 20px;
+    padding: 5px;
+    text-align: center;
+    background-color: #c6bee7;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+}
+
 
 
 input[type="file"] {
