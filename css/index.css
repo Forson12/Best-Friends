@@ -9,6 +9,7 @@ header {
     padding: 15px;
     border-radius: 5px;
     padding: 20px;
+    font-size: 18px;
 }
 
 
@@ -129,4 +130,9 @@ button {
 
 .emptying {
     margin-bottom: 60px;
+}
+
+.emptying {
+    padding: 10px;
+    font-size:auto;
 }
