@@ -9,6 +9,11 @@
    
     height: 100vh;
     
+  
+    
+    }
+    body{
+      background-color: aqua;
     }
     /* Header */
 header {
@@ -22,6 +27,14 @@ header {
   padding: 20px;
   margin-bottom: 60px ;
   
+}
+
+  
+  .logo {
+  height:30px;
+  width:30px;
+  padding:0px;
+  margin:0%;
 }
 
 /* Navigation */
@@ -46,6 +59,7 @@ header {
       top: 0;
       left: 0;*/
       text-align: center;
+     
 
     }
     .leftContainer{
@@ -69,19 +83,19 @@ header {
       height: 500px;
     width: 600px;
     }
-    .form{
+    form{
       text-align: center;
       padding: 20px;
 
     }
-    .form input[type="text"]{
+    input[type="text"]{
       width: 70%;
       
     }
-    .form input[type="email"]{
+   input[type="email"]{
       width: 70%;
     }
-    .form input[type="phoneNumber"]{
+    input[type="phoneNumber"]{
       width: 70%;
     }
     
