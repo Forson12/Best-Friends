@@ -21,6 +21,7 @@ body {
     padding: 0;
 }
 
+
 /* header {
     background-color: #333;
     color: #fff;
@@ -41,7 +42,9 @@ header nav ul li a {
     text-decoration: none;
 } */
 
+
 /* Header */
+
 header {
     background-color: lightseagreen;
     color: #fff;
@@ -51,10 +54,14 @@ header {
     padding: 15px;
     border-radius: 5px;
     padding: 20px;
-    
 }
 
+
 /* Navigation */
+
+
+/* Navigation */
+
 .header-left a {
     color: #fff;
     text-decoration: none;
@@ -67,23 +74,22 @@ header {
     margin-left: 20px;
     transition: color 0.3s;
 }
+
 .header-right a:hover {
-    color: #1500ff; 
-    text-decoration: underline; 
+    color: #1500ff;
+    text-decoration: underline;
 }
-body{ 
+
+body {
     background-color: #D3D3D3;
 }
 
-
 .logo {
-    height:30px;
-    width:30px;
-    padding:0px;
-    margin:0%;
+    height: 30px;
+    width: 30px;
+    padding: 0px;
+    margin: 0%;
 }
-
-
 
 main {
     margin: 2rem;
@@ -125,7 +131,7 @@ main {
 }
 
 footer {
-    background-color:  lightseagreen;
+    background-color: lightseagreen;
     color: #fff;
     text-align: center;
     padding: 1rem 0;

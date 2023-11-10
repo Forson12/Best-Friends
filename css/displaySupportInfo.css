@@ -1,3 +1,70 @@
+
+p {
+    margin-top: 20px;
+    font-style: italic;
+}
+
+
+a {
+    color: #00eeff;
+    text-decoration: none;
+}
+
+
+/* Header */
+header {
+    background-color: lightseagreen;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 70px;
+}
+
+
+.header-left a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 0px;
+}
+
+.header-right a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+.header-right a:hover {
+    color: #1500ff; /* Change to your preferred hover color */
+    text-decoration: underline; /* Add an underline on hover */
+}
+
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+body{
+    background-color: whitesmoke;
+}
+
+
+
+.logo {
+    height:30px;
+    width:30px;
+    padding:0px;
+    margin:0%;
+}
+
+
+
+
 .left-section1{
     margin: 5px 2px 5px 2px;
     padding: 20px;
@@ -34,6 +101,33 @@
     display: block;
 
 
+}
+
+.section2 {
+
+    width:97%; 
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    align-content: center;
+
+}
+
+
+
+.section3 {
+    align-content: center;
+    width:95%; 
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    display: block;
 }
 
 
@@ -75,28 +169,42 @@
 
 
 
-.section2 {
-    align-content: center;
-    width:95%; 
-    margin: 10px;
-    padding: 10px;
+
+.form-control {
     border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    display: block;
 }
 
 
-.section-btn {
+
+.registerButton {
+    padding: 10px 75px;
+    background-color: #c6bee7;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+
+.image {
+    
+    height:300px;
+    width:100%;
+    padding:0px;
+    margin:0%;
+}
+
+
+.btn-reserve {
     width:92%; 
     margin: 20px;
     padding: 5px;
     text-align: center;
-    background-color: #007bff;
+    background-color: #c6bee7;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     margin-left: auto;
     margin-right: auto;
@@ -104,3 +212,20 @@
 
 
 }
+
+
+.btn-reserve {
+    background-color: #c6bee7;
+}
+
+
+
+
+/* Footer */
+footer {
+    background-color:  lightseagreen;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  

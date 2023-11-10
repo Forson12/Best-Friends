@@ -1,5 +1,5 @@
-
 /* Header */
+
 header {
     background-color: lightseagreen;
     color: #fff;
@@ -9,10 +9,11 @@ header {
     padding: 15px;
     border-radius: 5px;
     padding: 20px;
-    
 }
 
+
 /* Navigation */
+
 .header-left a {
     color: #fff;
     text-decoration: none;
@@ -25,19 +26,23 @@ header {
     margin-left: 20px;
     transition: color 0.3s;
 }
+
 .header-right a:hover {
-    color: #1500ff; /* Change to your preferred hover color */
-    text-decoration: underline; /* Add an underline on hover */
+    color: #1500ff;
+    /* Change to your preferred hover color */
+    text-decoration: underline;
+    /* Add an underline on hover */
 }
 
-body{
+body {
     background-color: #D3D3D3;
 }
 
 
 /* Footer */
+
 footer {
-    background-color:  lightseagreen;
+    background-color: lightseagreen;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
@@ -45,16 +50,15 @@ footer {
 
 
 /* Search Bar */
+
 .search-bar {
     margin-top: 20px;
     margin-left: 0px;
     display: flex;
     align-items: center;
-    background-color: lightpink; 
-    padding: 10px; 
-
+    background-color: lightpink;
+    padding: 10px;
 }
-
 
 input[type="text"] {
     padding: 8px;
@@ -83,7 +87,7 @@ button {
     border: 1px solid black;
     border-radius: 5px;
     box-sizing: border-box;
-    display:flex;
+    display: flex;
 }
 
 .groupContent {
@@ -96,7 +100,8 @@ button {
 .groupImg {
     max-width: 100%;
     max-height: 100%;
-    border-radius: 10px; /* Adjust to your preferred border radius */
+    border-radius: 10px;
+    /* Adjust to your preferred border radius */
 }
 
 
@@ -116,10 +121,10 @@ button {
 }
 
 .logo {
-    height:30px;
-    width:30px;
-    padding:0px;
-    margin:0%;
+    height: 30px;
+    width: 30px;
+    padding: 0px;
+    margin: 0%;
 }
 
 .emptying {
