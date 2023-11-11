@@ -148,10 +148,19 @@
         const myLatLng3 = { lat: 58.17002202476406, lng: -5.305726892752041 };
         const myLatLng4 = { lat: 57.117043776740914, lng: -3.644830878326825 };
         const myLatLng5 = { lat: 56.68007394537344, lng: -5.0891360361120075 };
+        var array = [];
+        const myLatLng6 = { lat: 56.45929370874878, lng: -2.9687479864241997 };
+        array.push(myLatLng6);
 
         map = new Map(document.getElementById("map"), {
             center: { lat: 57.01389252505794, lng: -4.092130687211317 }, 
             zoom: 7,
+        });
+
+        new google.maps.Marker({
+            position: array[0],
+            map,
+            title: "Hello World!",
         });
 
         new google.maps.Marker({
