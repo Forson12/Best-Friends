@@ -105,6 +105,10 @@ footer {
     padding: 1rem 0;
 } */
 
+gmp-map {
+    height: 100%;
+  }
+
 footer {
     background-color: lightseagreen;
     color: #fff;
