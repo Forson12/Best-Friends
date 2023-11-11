@@ -1,53 +1,155 @@
-/* Header */
+/* Adding the Circular font */
+@font-face {
+    font-family: 'CircularFont';
+    src: url('/fonts/circular-std-font-family/CircularStd-MediumItalic.ttf') format('woff');
+    /* Add additional formats if needed (e.g., woff2) */
+  }
+  
+  /* body {
+    font-family: 'CircularFont', sans-serif;
+    /* Use 'YourCircularFont' as the font-family for the body */
+  /* }  */
+  
 
-header {
-    background-color: lightseagreen;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    border-radius: 5px;
-    padding: 20px;
-    font-size: 18px;
-}
+/* Secondary navigation code */
+    .secondary-nav {
+        background-color: blueviolet; 
+        transition: background-color 0.3s ease;
+        padding: 10px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+        font-family: 'Circularfont', sans-serif;
+    }
+
+    .secondary-nav a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        margin: 0 10px;
+    }
+
+    .secondary-nav a:hover {
+        color: #ffd700;
+        /* Change to your preferred hover color */
+        text-decoration: underline;
+        /* Add an underline on hover */
+        }
+
+    
+/* Main Header */
+    header {
+        background-color: lightseagreen;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 18px;
+        font-family: 'Circularfont', Arial, Helvetica, sans-serif;
+    }
 
 
-/* Navigation */
+    /* Navigation */
 
-.header-left a {
-    color: #fff;
-    text-decoration: none;
-    margin-left: 0px;
-}
+    .header-left a {
+        color: #fff;
+        text-decoration: none;
+        margin-left: 0px;
+    }
 
-.header-right a {
-    color: #fff;
-    text-decoration: none;
-    margin-left: 20px;
-    transition: color 0.3s;
-}
+    .header-right a {
+        color: #fff;
+        text-decoration: none;
+        margin-left: 20px;
+        transition: color 0.3s;
+    }
 
-.header-right a:hover {
-    color: #1500ff;
-    /* Change to your preferred hover color */
-    text-decoration: underline;
-    /* Add an underline on hover */
-}
+    .header-right a:hover {
+        color: #1500ff;
+        /* Change to your preferred hover color */
+        text-decoration: underline;
+        /* Add an underline on hover */
+    }
 
 body {
-    background-color: #D3D3D3;
+    background-color: beige;
+    
+}
+
+
+/* The container div css code */
+.container{
+    margin: 0 auto;
+    width: 58%; 
+    background-color: lightblack; 
+    padding: 20px; 
 }
 
 
 /* Footer */
 
+/* 
 footer {
     background-color: lightseagreen;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
+} */
+
+footer {
+    background-color: lightseagreen;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    
 }
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 50px;
+    height: auto;
+}
+
+.footer-text {
+    max-width: 500px;
+    font-size: 18px;
+    font-family: 'Circularfont', Arial, Helvetica, sans-serif;
+}
+
+.footer-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    font-family: 'Circularfont', Arial, Helvetica, sans-serif;
+}
+
+.footer-links li {
+    margin: 0 15px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #1500ff;
+   
+    text-decoration: underline;
+   
+}
+
 
 
 /* Search Bar */
@@ -57,8 +159,12 @@ footer {
     margin-left: 0px;
     display: flex;
     align-items: center;
-    background-color: lightpink;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: beige;
     padding: 10px;
+    font-family: 'Circularfont', Arial, Helvetica, sans-serif;
 }
 
 input[type="text"] {
@@ -78,6 +184,7 @@ button {
 
 .group-container {
     margin: 20px auto;
+    font-family: 'Circularfont', sans-serif;
 }
 
 .group {
@@ -123,11 +230,13 @@ button {
 }
 
 .logo {
-    height: 30px;
-    width: 30px;
-    padding: 0px;
+    height: 35px;
+    width: 140px;
+    /* padding: 0px; */
+    padding-right: 40px;
     margin: 0%;
 }
+
 
 .emptying {
     margin-bottom: 60px;
