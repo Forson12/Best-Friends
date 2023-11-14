@@ -40,11 +40,11 @@ Install 3 extensions for this program to work
 Note: install all this in the terminal of your working environment, in this case VSCode 
 
 code for this is below 
-# npm i express 
-# npm i ejs 
-# npm i mongoose  
-# npm install express-session
-npm install express body-parser express-session
+1. npm i express 
+2. npm i ejs 
+3. npm i mongoose  
+4. npm install express-session
+5. npm install express body-parser express-session
 
 
 
