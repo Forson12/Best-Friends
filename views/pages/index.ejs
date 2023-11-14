@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head') %>
+    <title>Alturo Home Page</title>
+    <link rel="stylesheet" href="css/index.css">
+    
+    <script>
+        (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
+          key: "AIzaSyCeL_qnyCrjHHuoeXM0l2wDdSOrh2iqRr4",
+          v: "weekly",
+          // Use the 'v' parameter to indicate the version to use (weekly, beta, alpha, etc.).
+          // Add other bootstrap parameters as needed, using camel case.
+        });
+    </script>
+
+</head>
+
+<body>
+    <!-- Secondary Navigation -->
+    <div class="secondary-nav">
+        <a href="pages/aboutUs.html">About Us</a>
+        <a href="pages/immediateSupport.html" >Immediate Support</a>
+        <a href="#">Our Services</a>
+        <a href="#">Join Us</a>
+
+    </div>
+
+<header>
+    <!--ejs header-->
+    <%- include('../partials/header') %>
+</header>
+
+<div class="container">
+
+    <h2 class="search-title">Find support on your doorstep</h2>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+
+        <input type="text" id="searchInput" placeholder="Search...">
+
+    </div>
+
+<!-- 
+    <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <select>
+            <option value="" disabled selected>Filter By</option>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            
+        </select>
+        <select>
+            <option value="" disabled selected>Sort By</option>
+            <option value="sort1">Sort 1</option>
+            <option value="sort2">Sort 2</option>
+            
+        </select>
+        <button type="button">Search</button>
+    </div> -->
+
+   
+    
+    <!-- Map codes  -->
+    <gmp-map center="57.14802551269531,-2.0944395065307617" zoom="14" map-id="DEMO_MAP_ID">
+        <gmp-advanced-marker position="57.14802551269531,-2.0944395065307617" title="My location">
+        </gmp-advanced-marker>
+    </gmp-map>
+
+    <div id="map" style="height: 500px;">
+    </div>
+
+
+    <!-- For the groups -->
+    <div class="group-header">
+        <h2>Find groups near you</h2>
+    </div>
+
+    <div class="group-container">
+        <div class="group">
+            <div class="groupContent">
+                <img class="groupImg" src="Images/img8.jpg" alt="Group 1 Image">
+            </div>
+            <div class="groupContent">
+                <h3>Yout Group 1</h3>
+                <p>Description of Group 1</p>
+            </div>
+        </div>
+        <div class="group">
+            <div class="groupContent">
+                <img class="groupImg" src="Images/img8.jpg" alt="Group 2 Image">
+            </div>
+            <div class="groupContent">
+                <h3>Group 2</h3>
+                <p>Description of Group 2</p>
+            </div>
+        </div>
+        <div class="group">
+            <div class="groupContent">
+                <img class="groupImg" src="Images/img8.jpg" alt="Group 2 Image">
+            </div>
+            <div class="groupContent">
+                <h3>Group 2</h3>
+                <p>Description of Group 2</p>
+            </div>
+        </div>
+        <div class="group">
+            <div class="groupContent">
+                <img class="groupImg" src="Images/img8.jpg" alt="Group 2 Image">
+            </div>
+            <div class="groupContent">
+                <h3>Group 2</h3>
+                <p>Description of Group 2</p>
+            </div>
+        </div>
+    </div> 
+    
+</div>
+
+
+<script>
+
+    let map;
+
+    async function initMap() {
+        const { Map } = await google.maps.importLibrary("maps");
+        const myLatLng1 = { lat: 57.154025107590655, lng: -2.106131630996576 };
+        const myLatLng2 = { lat: 57.64890532901103, lng: -3.3124670158831826 };
+        const myLatLng3 = { lat: 58.17002202476406, lng: -5.305726892752041 };
+        const myLatLng4 = { lat: 57.117043776740914, lng: -3.644830878326825 };
+        const myLatLng5 = { lat: 56.68007394537344, lng: -5.0891360361120075 };
+        var array = [];
+        const myLatLng6 = { lat: 56.45929370874878, lng: -2.9687479864241997 };
+        array.push(myLatLng6);
+
+        map = new Map(document.getElementById("map"), {
+            center: { lat: 57.01389252505794, lng: -4.092130687211317 }, 
+            zoom: 7,
+        });
+
+        new google.maps.Marker({
+            position: array[0],
+            map,
+            title: "Hello World!",
+        });
+
+        new google.maps.Marker({
+            position: myLatLng1,
+            map,
+            title: "Hello World!",
+        });
+
+        new google.maps.Marker({
+            position: myLatLng2,
+            map,
+            title: "Hello World2!",
+        });
+
+        new google.maps.Marker({
+            position: myLatLng3,
+            map,
+            title: "Hello World3!",
+        });
+
+        new google.maps.Marker({
+            position: myLatLng4,
+            map,
+            title: "Hello World4!",
+        });
+
+        new google.maps.Marker({
+            position: myLatLng5,
+            map,
+            title: "Hello World5!",
+        });
+    }
+
+    initMap();
+
+
+</script>
+
+<!-- Search Bar Script -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const searchInput = document.getElementById('searchInput');
+
+        // Event listener for input changes
+        searchInput.addEventListener('input', function () {
+            const searchTerm = searchInput.value;
+            // Perform the search or update the UI as needed
+            // For demonstration, let's log the search term to the console
+            console.log('Search Term:', searchTerm);
+        });
+    });
+</script>
+
+
+
+</body>
+
+<!-- <footer>
+    <p>&copy; Alturo. All rights reserved.</p>
+</footer> -->
+
+<footer>
+    <!--ejs footer-->
+    <%- include('../partials/footer') %>
+</footer>
+
+
+</html>

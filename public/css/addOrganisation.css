@@ -1,0 +1,80 @@
+/* .container{
+    background-color:white ;
+    width: 80;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.add-group{
+    background-color: #9fcfd3ff;
+    float:right;
+}
+.Save{
+    background-color: #feed9e;
+}
+.upload{
+    background-color: #f18c8a;
+} */
+
+.container {
+    background-color: white;
+    width: 80%; /* Set the width to 80% of the viewport width */
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+/* Add some styling to the form elements */
+.form-control {
+    margin-bottom: 10px;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+/* Style the button */
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Style the file input */
+input[type="file"] {
+    display: none;
+}
+
+/* Style the labels for the file input */
+label[for="logo"] {
+    cursor: pointer;
+    background-color: #28a745;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Add some spacing for the comments textarea */
+#comment {
+    margin-top: 10px;
+}
+
+/* Style the submit button */
+#submitBtn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Add hover effect for the submit button */
+#submitBtn:hover {
+    background-color: #0056b3;
+}

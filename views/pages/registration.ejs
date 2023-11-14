@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" type="text/css" href="css/register.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <a><img class="logo" src="../Images/logo.png"></a>
+            <h1 style="display: inline; align-items: center; font-size: 20px;">Alturo</h1>
+        </div>
+        <nav class="header-right">
+            <a href="..\index.html">Home</a>
+            <a href="./aboutUs.html">About Us</a>
+            <a href="./contact.html">Contact Us</a>
+            <a href="./immediateSupport.html" >Immediate Support</a>
+            <a href="./login.html" >Login</a>
+            <!-- Add more links as needed -->
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="register">
+            <h1>Welcome! Let's get you started</h1>
+
+            <form action="/registration" method="post">
+                <div>
+                    <label for="username"></label>
+                    <input type="text" id="username" placeholder="Enter Username" name="username" required>
+                </div>
+                <div>
+                    <label for="email"></label>
+                    <input type="email" id="email" placeholder="Enter Email" name="email" required>
+                </div>
+                <div>
+                    <label for="password"></label>
+                    <input type="password" id="password" placeholder="Enter Password" name="password" required>
+                </div>
+                <div>
+                    <label for="confirmPassword"></label>
+                    <input type="password" id="confirmPassword" placeholder="Confirm Password" name="confirmPassword" required>
+                </div>
+
+                <button type="submit" class="registerButton">Register</button>
+            </form>
+            <p>Already have an account? <a href="login">Sign in</a></p>
+        </div>
+
+        <div class="boxImg">
+            <img src="../Images/instagram-01.png" alt="image" width="500px" height="500px">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Alturo. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
+
+

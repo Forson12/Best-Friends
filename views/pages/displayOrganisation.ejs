@@ -1,0 +1,68 @@
+
+
+<!-- views/pages/displayOrganization.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Organization</title>
+    <link rel="stylesheet" href="/css/displayOrganization.css">
+    <!-- Add other stylesheets, scripts, or dependencies here -->
+</head>
+<!-- views/pages/displayOrganisation.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Organization Profile</title>
+    
+</head>
+
+<body>
+
+    <header>
+        <h1>Your Organization Profile</h1>
+        <h2>Welcome  <%= user.username %>!</h2>
+    </header>
+
+    <main>
+        <section>
+            <label for="orgName">Organization Name:</label>
+            <p><%= organization.orgName %></p>
+        </section>
+
+        <section>
+            <label for="email">Email:</label>
+            <p><%= organization.email %></p>
+        </section>
+
+        <section>
+            <label for="phoneNumber">Phone Number:</label>
+            <p><%= organization.phoneNumber %></p>
+        </section>
+
+        <section>
+            <label for="instaHandles">Instagram Handles:</label>
+            <p><%= organization.instaHandles %> </p>
+        </section>
+
+        <section>
+            <label for="twitterHandles">Twitter Handles</label>
+            <p><%= organization.twitterHandles %></p>
+        </section>
+
+        <!-- Add styling for other organization details -->
+
+        <button onclick="location.href='/addOrganisation'">Update Organization Details</button>
+    </main>
+
+
+</body>
+
+</html>
+
