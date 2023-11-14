@@ -11,11 +11,14 @@ https://nodejs.org/en/download
 - Make sure you download according to the specs of your pc / laptop (either Windwos 64 or the one for MAc)
 - Follow the installation process, pretty simple to install
 - After installation, open cmd (command prompt) or VSC (Visual Studio Code) terminal and type this to make sure it is installed on our laptop
+- I suggest you type this in the terminal of VSC since we will be running the code there 
  - npm --version
 - if the veriosn of node js shows then, everything worked. 
 - Mind you, the version can show but the node might not work on VSC 
 - else you need to add node to your path environment variables 
-- Contact me to help you out or follow the instructions on this page, https://bobbyhadz.com/blog/npm-is-not-recognized-as-internal-or-external-command#:~:text=The%20error%20%22'npm'%20is,your%20system's%20PATH%20environment%20variable.
+- Contact me to help you out or 
+- Follow the instructions on this page, https://bobbyhadz.com/blog/npm-is-not-recognized-as-internal-or-external-command#:~:text=The%20error%20%22'npm'%20is,your%20system's%20PATH%20environment%20variable.
+
 
 # You will then have to download and install mongodb if you want to see the login/register working 
 
@@ -24,7 +27,7 @@ https://nodejs.org/en/download
 - After downloading, install it. 
 - The installation is straigth forward but make sure the mongo compass box is ticked as that's what we will be using 
 - (leave this part for now) download mogo Shell later https://www.mongodb.com/try/download/shell 
-- 
+- Mongo cmopass should open automatically after installment. 
 
 
  
