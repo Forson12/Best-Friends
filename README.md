@@ -1,9 +1,9 @@
 # Best-Friends
 A group of best friends coding the new world!!
 
+- Sexy Yout King - @KOBI
+- BackEnd criteria to be met for your code to work 
 
-# Sexy Yout King - @KOBI
-# BackEnd criteria to be met for your code to work 
 # You need to install 2 main things to get started
 
 - First thing is to download and install nodejs from this site if you don't have it on your laptop / pc already 
@@ -11,7 +11,7 @@ https://nodejs.org/en/download
 - Make sure you download according to the specs of your pc / laptop (either Windwos 64 or the one for MAc)
 - Follow the installation process, pretty simple to install
 - After installation, open cmd (command prompt) or VSC (Visual Studio Code) terminal and type this to make sure it is installed on our laptop
-# npm --version
+ - npm --version
 - if the veriosn of node js shows then, everything worked. 
 - Mind you, the version can show but the node might not work on VSC 
 - else you need to add node to your path environment variables 
