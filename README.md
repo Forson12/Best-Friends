@@ -1,7 +1,7 @@
 # Best-Friends
 A group of best friends coding the new world!!
 
-- Sexy Yout King - @KOBI
+- @KOBI
 - BackEnd criteria to be met for your code to work 
 
 # You need to install 2 main things to get started
