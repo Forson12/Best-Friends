@@ -74,6 +74,7 @@ app.post('/registration', async (req, res) => {
     console.error('Error during registration:', error);
     res.status(500).send('Internal Server Error');
   }
+  
 });
 
 
@@ -236,7 +237,10 @@ app.get('/addOrganisation', (req, res) => {
         // Update the organization details in the session
         req.session.user.organizationDetails = organization;
 
-        console.log('Values Updated:', organization);
+        console.log('Values Updated:', organization); 
+
+        // update the details 
+
 
         // Redirect to a welcome or dashboard page
         res.redirect('/displayOrganisation');
