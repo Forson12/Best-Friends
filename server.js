@@ -202,6 +202,12 @@ app.get('/registration', function (req, res) {
   res.render('pages/registration');
 });
 
+/* Route to the immediate support Page not working :(  */
+app.get('/immediateSupport', function (req, res) {
+  console.log('Handling request for / immediateSupport');
+  res.render('pages/immediateSupport');
+});
+
 
 
 
