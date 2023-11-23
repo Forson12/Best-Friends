@@ -157,6 +157,10 @@ app.get('/', function (req, res) {
   res.render('pages/index');
 });
 
+app.get('/index', function (req, res) {
+  console.log('Handling request for /index or landing page');
+  res.render('pages/index');
+});
 
 // delete this
 /*Route to the displaySupportInfo page */
@@ -181,6 +185,12 @@ app.get('/addSupportInfo', function (req, res) {
     res.render('pages/contact');
   });
 
+/* Route to the About Us*/
+app.get('/aboutUs', function (req, res) {
+  console.log('Handling request for / contactUs');
+  res.render('pages/contact');
+});
+
 
 /*Route to the Login Page */
 app.get('/login', function (req, res) {
@@ -203,7 +213,7 @@ app.get('/registration', function (req, res) {
 });
 
 /* Route to the immediate support Page not working :(  */
-app.get('/immediateSupport', function (req, res) {
+app.get('/ImmediateSupport', function (req, res) {
   console.log('Handling request for / immediateSupport');
   res.render('pages/immediateSupport');
 });
