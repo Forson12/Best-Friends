@@ -125,59 +125,68 @@
     let map;
 
     async function initMap() {
-        const { Map } = await google.maps.importLibrary("maps");
-        const myLatLng1 = { lat: 57.154025107590655, lng: -2.106131630996576 };
-        const myLatLng2 = { lat: 57.64890532901103, lng: -3.3124670158831826 };
-        const myLatLng3 = { lat: 58.17002202476406, lng: -5.305726892752041 };
-        const myLatLng4 = { lat: 57.117043776740914, lng: -3.644830878326825 };
-        const myLatLng5 = { lat: 56.68007394537344, lng: -5.0891360361120075 };
-        var array = [];
-        const myLatLng6 = { lat: 56.45929370874878, lng: -2.9687479864241997 };
-        array.push(myLatLng6);
-
-        map = new Map(document.getElementById("map"), {
-            center: { lat: 57.01389252505794, lng: -4.092130687211317 }, 
+  // Request needed libraries.
+        const { Map, InfoWindow } = await google.maps.importLibrary("maps");
+        const { AdvancedMarkerElement, PinElement } = await google.maps.importLibrary(
+            "marker",
+        );
+        const map = new Map(document.getElementById("map"), {
             zoom: 7,
+            center: { lat: 57.01389252505794, lng: -4.092130687211317 },
+            mapId: "4504f8b37365c3d0",
         });
+        // Set LatLng and title text for the markers. The first marker (Group A)
+        // receives the initial focus when tab is pressed. Use arrow keys to
+        // move between markers; press tab again to cycle through the map controls.
+        const tourStops = [
+            {
+                position: { lat: 57.154025107590655, lng: -2.106131630996576 },
+                title: "Group A",
+            },
+            {
+                position: { lat: 57.64890532901103, lng: -3.3124670158831826 },
+                title: "Group B",
+            },
+            {
+                position: { lat: 58.17002202476406, lng: -5.305726892752041 },
+                title: "Group C",
+            },
+            {
+                position: { lat: 57.117043776740914, lng: -3.644830878326825 },
+                title: "Group D",
+            },
+            {
+                position: { lat: 56.68007394537344, lng: -5.0891360361120075 },
+                title: "Group E",
+            },
+        ];
+        // Create an info window to share between markers.
+        const infoWindow = new InfoWindow();
 
-        new google.maps.Marker({
-            position: array[0],
-            map,
-            title: "Hello World!",
+        // Create the markers.
+        tourStops.forEach(({ position, title }, i) => {
+            const pin = new PinElement({
+                glyph: `${i + 1}`,
+            });
+            const marker = new AdvancedMarkerElement({
+                position,
+                map,
+                title: `${i + 1}. ${title}`,
+                content: pin.element,
+            });
+
+            // Add a click listener for each marker, and set up the info window.
+            marker.addListener("click", ({ domEvent, latLng }) => {
+                const { target } = domEvent;
+
+                infoWindow.close();
+                infoWindow.setContent(marker.title);
+                infoWindow.open(marker.map, marker);
+            });
         });
+}
 
-        new google.maps.Marker({
-            position: myLatLng1,
-            map,
-            title: "Hello World!",
-        });
-
-        new google.maps.Marker({
-            position: myLatLng2,
-            map,
-            title: "Hello World2!",
-        });
-
-        new google.maps.Marker({
-            position: myLatLng3,
-            map,
-            title: "Hello World3!",
-        });
-
-        new google.maps.Marker({
-            position: myLatLng4,
-            map,
-            title: "Hello World4!",
-        });
-
-        new google.maps.Marker({
-            position: myLatLng5,
-            map,
-            title: "Hello World5!",
-        });
-    }
-
-    initMap();
+initMap();
 
 
 </script>
