@@ -131,7 +131,7 @@ app.post('/login', async (req, res) => {
             req.session.organizationDetails = organization;
 
             // Redirect to the displayOrganisation page after successful login
-            res.redirect('/displayOrganisation');
+            res.redirect('/addOrganisation');
         } else {
             // User not found, handle login failure
             res.status(401).send('Invalid username or password');
