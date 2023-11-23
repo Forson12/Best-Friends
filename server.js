@@ -157,6 +157,19 @@ app.get('/', function (req, res) {
   res.render('pages/index');
 });
 
+/*Route to the displaySupportInfo page */
+app.get('/displaySupportInfo', function (req, res) {
+  console.log('Handling request for /addSupportInfo');
+  res.render('pages/displaySupportInfo');
+});
+
+
+/*Route to the addSupportInfo page */
+app.get('/addSupportInfo', function (req, res) {
+  console.log('Handling request for /addSupportInfoe');
+  res.render('pages/addSupportInfo');
+});
+
 
 /* Route to the Contact Page*/
   app.get('/contactUs', function (req, res) {

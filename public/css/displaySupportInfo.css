@@ -43,9 +43,14 @@ header {
 }
 
 
-h1 {
+h1NO {
     font-size: 24px;
     margin-bottom: 20px;
+}
+
+
+h1 {
+    color: #333;
 }
 
 
@@ -108,6 +113,32 @@ body{
 
 
 }
+
+
+
+
+.nosection{
+    width:92%; 
+    margin: 10px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+
+}
+
+
+.nosection-inside{
+    width:92%; 
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+
+}
+
+
 
 .section2 {
 
