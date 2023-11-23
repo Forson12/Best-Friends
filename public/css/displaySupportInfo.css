@@ -1,3 +1,44 @@
+/* Adding the Circular font */
+@font-face {
+    font-family: 'CircularFont';
+    src: url('/fonts/circular-std-font-family/CircularStd-MediumItalic.ttf') format('woff');
+    /* Add additional formats if needed (e.g., woff2) */
+  }
+  
+  
+/* nav logo code */
+.logo{
+    height: 35px;
+    width: 140px;
+    /* padding: 0px; */
+    padding-right: 40px;
+    margin: 0%;
+}
+  /* Secondary navigation code */
+.secondary-nav {
+    background-color: blueviolet;
+    transition: background-color 0.3s ease;
+    padding: 10px;
+    text-align: right; /* Align text to the right */
+    font-size: 16px;
+    font-family: 'Circularfont', sans-serif;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.secondary-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.secondary-nav a:hover {
+    color: #ffd700;
+    text-decoration: underline;
+}
+
+
 
 p {
     margin-top: 20px;
@@ -59,13 +100,6 @@ body{
 }
 
 
-
-.logo {
-    height:30px;
-    width:30px;
-    padding:0px;
-    margin:0%;
-}
 
 
 
