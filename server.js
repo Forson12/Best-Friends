@@ -214,8 +214,8 @@ app.get('/addSupportInfo', function (req, res) {
 
 /* Route to the About Us*/
 app.get('/aboutUs', function (req, res) {
-  console.log('Handling request for / contactUs');
-  res.render('pages/contact');
+  console.log('Handling request for / aboutUs');
+  res.render('pages/aboutUs');
 });
 
 

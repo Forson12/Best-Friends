@@ -1,5 +1,21 @@
-/* Navigation */
+@font-face {
+    font-family: 'CircularFont';
+    src: url('/fonts/circular-std-font-family/CircularStd-MediumItalic.ttf') format('woff');
+    /* Add additional formats if needed (e.g., woff2) */
+  }
+  
+  
+  /* nav logo code */
+  .logo {
+    height: 35px;
+    width: 140px;
+    /* padding: 0px; */
+    padding-right: 40px;
+    margin: 0%;
+  }
 
+/* Navigation */
+/* 
 .header-left a {
     color: #fff;
     text-decoration: none;
@@ -16,14 +32,14 @@
 .header-right a:hover {
     color: #1500ff;
     /* Change to your preferred hover color */
-    text-decoration: underline;
+    /* text-decoration: underline; */
     /* Add an underline on hover */
-}
+/* } */
 
 
 /* Header */
 
-header {
+/* header {
     background-color: lightseagreen;
     color: #fff;
     display: flex;
@@ -33,24 +49,26 @@ header {
     border-radius: 5px;
     padding: 20px;
     margin-bottom: 70px;
-}
+} */
 
 body {
     background-color: #D3D3D3;
 }
-
+/* 
 .logo {
     height: 30px;
     width: 30px;
     padding: 0px;
     margin: 0%;
-}
+} */
 
 .container {
     display: flex;
     column-gap: normal;
     justify-content: center;
     height: 100vh;
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
 
 .register {
