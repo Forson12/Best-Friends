@@ -70,4 +70,10 @@ code for this is below
 
 
 
-
+# Donont touch!
+Welcome  <%= user.username %>!</h2>
+<p><%= organization.orgName %></p>
+<p><%= organization.email %></p>
+<p><%= organization.phoneNumber %></p>
+<p><%= organization.instaHandles %> </p>
+ <p><%= organization.twitterHandles %></p>

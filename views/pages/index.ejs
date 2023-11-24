@@ -79,42 +79,45 @@
     </div>
 
     <div class="group-container">
-        <div class="group">
-            <div class="groupContent">
-                <img class="groupImg" src="Images/img8.jpg" alt="Group 1 Image">
+
+        <% users.forEach(user => { %>
+            <div class="group">
+                <div class="groupContent">
+                    <img class="groupImg" src="Images/img8.jpg" alt="Group 1 Image">
+                </div>
+                <div class="groupContent">
+                    <h3><%= user.username %></h3>
+                    <p>Description of Group 1</p>
+                </div>
             </div>
-            <div class="groupContent">
-                <h3>Yout Group 1</h3>
-                <p>Description of Group 1</p>
-            </div>
-        </div>
-        <div class="group">
-            <div class="groupContent">
-                <img class="groupImg" src="Images/img8.jpg" alt="Group 2 Image">
-            </div>
-            <div class="groupContent">
-                <h3>Group 2</h3>
-                <p>Description of Group 2</p>
-            </div>
-        </div>
-        <div class="group">
-            <div class="groupContent">
-                <img class="groupImg" src="Images/img8.jpg" alt="Group 2 Image">
-            </div>
-            <div class="groupContent">
-                <h3>Group 2</h3>
-                <p>Description of Group 2</p>
-            </div>
-        </div>
-        <div class="group">
-            <div class="groupContent">
-                <img class="groupImg" src="Images/img8.jpg" alt="Group 2 Image">
-            </div>
-            <div class="groupContent">
-                <h3>Group 2</h3>
-                <p>Description of Group 2</p>
-            </div>
-        </div>
+            <!-- <div class="group">
+                <div class="groupContent">
+                    <img class="groupImg" src="Images/img8.jpg" alt="Group 2 Image">
+                </div>
+                <div class="groupContent">
+                    <h3><%= user.username %></h3>
+                    <p>Description of Group 2</p>
+                </div>
+            </div> -->
+            <!-- <div class="group">
+                <div class="groupContent">
+                    <img class="groupImg" src="Images/img8.jpg" alt="Group 2 Image">
+                </div>
+                <div class="groupContent">
+                    <h3><%= user.username %></h3>
+                    <p>Description of Group 3</p>
+                </div>
+            </div> -->
+            <!-- <div class="group">
+                <div class="groupContent">
+                    <img class="groupImg" src="Images/img8.jpg" alt="Group 2 Image">
+                </div>
+                <div class="groupContent">
+                    <h3><%= user.username %></h3>
+                    <p>Description of Group 2</p>
+                </div>
+            </div> -->
+        <% }); %>
     </div> 
     
 </div>

@@ -152,14 +152,41 @@ app.use(express.static('public'));
 
 
 /*Route to the index page */
-app.get('/', function (req, res) {
-  console.log('Handling request for /index or landing page');
-  res.render('pages/index');
+// app.get('/', function (req, res) {
+  
+//   console.log('Handling request for /index or landing page');
+//   res.render('pages/index', {users});
+// });
+
+app.get('/', async (req, res) => {
+  try {
+      // Fetch all users from the database
+      const users = await User.find();
+
+      // Render the index page and pass the users to the view
+      res.render('pages/index', { users });
+  } catch (error) {
+      console.error('Error fetching users:', error);
+      res.status(500).send('Internal Server Error');
+  }
 });
 
-app.get('/index', function (req, res) {
-  console.log('Handling request for /index or landing page');
-  res.render('pages/index');
+// app.get('/index', function (req, res) {
+//   console.log('Handling request for /index or landing page');
+//   res.render('pages/index', {users});
+// });
+
+app.get('/index', async (req, res) => {
+  try {
+      // Fetch all users from the database
+      const users = await User.find();
+
+      // Render the index page and pass the users to the view
+      res.render('pages/index', { users });
+  } catch (error) {
+      console.error('Error fetching users:', error);
+      res.status(500).send('Internal Server Error');
+  }
 });
 
 // delete this
@@ -219,7 +246,23 @@ app.get('/ImmediateSupport', function (req, res) {
 });
 
 
+// app.get('/displayOrganisation', function (req, res) {
+//   console.log('Handling request for / displayOrganisation');
+//   res.render('pages/displayOrganisation');
+// }); 
 
+
+// app.get('/kobiTryout1.ejs', function (req, res) {
+//   console.log('Handling request for / kobiTryout1.ejs');
+//   res.render('pages/kobiTryout1.ejs');
+// }); 
+
+// Route for Log out 
+app.get('/logout', function(req, res) {
+  req.session.loggedin = false;
+  req.session.destroy();
+  res.redirect('/');
+});
 
 // Route for handling the /addOrganization page
 
@@ -240,49 +283,93 @@ app.get('/addOrganisation', (req, res) => {
 
   
 
-  app.post('/addOrganisation', async (req, res) => {
-    const { orgName, email, phoneNumber, logo, instaHandles, twitterHandles, linkHandles, comments } = req.body;
+//   app.post('/addOrganisation', async (req, res) => {
+//     const { orgName, email, phoneNumber, logo, instaHandles, twitterHandles, linkHandles, comments } = req.body;
 
-    try {
-        // Assuming you've stored the user in the session upon login
-        const user = req.session.user;
+//     try {
+//         // Assuming you've stored the user in the session upon login
+//         const user = req.session.user;
 
-        // Check if the user is logged in
-        if (!user) {
-            return res.redirect('/login'); // Redirect to login if not logged in
-        }
+//         // Check if the user is logged in
+//         if (!user) {
+//             return res.redirect('/login'); // Redirect to login if not logged in
+//         }
 
-        console.log('User ID:', user._id);
+//         console.log('User ID:', user._id);
 
-        // Access organization details from the session
-        const organization = req.session.organizationDetails || {};
+//         // Access organization details from the session
+//         const organization = req.session.organizationDetails || {};
 
-        // Update organization details
-        organization.orgName = orgName;
-        organization.email = email;
-        organization.phoneNumber = phoneNumber;
-        organization.logo = logo;
-        organization.instaHandles = instaHandles;
-        organization.twitterHandles = twitterHandles;
-        organization.linkHandles = linkHandles;
-        organization.comments = comments;
+//         // Update organization details
+//         organization.orgName = orgName;
+//         organization.email = email;
+//         organization.phoneNumber = phoneNumber;
+//         organization.logo = logo;
+//         organization.instaHandles = instaHandles;
+//         organization.twitterHandles = twitterHandles;
+//         organization.linkHandles = linkHandles;
+//         organization.comments = comments;
 
-        // Update the organization details in the session
-        req.session.user.organizationDetails = organization;
+//         // Update organization details in the database
+        
 
-        console.log('Values Updated:', organization); 
+//         // Update the organization details in the session
+//         req.session.user.organizationDetails = organization;
 
-        // update the details 
+//         console.log('Values Updated:', organization); 
+
+//         // update the details 
 
 
-        // Redirect to a welcome or dashboard page
-        res.redirect('/displayOrganisation');
+//         // Redirect to a welcome or dashboard page
+//         res.redirect('/displayOrganisation');
 
-    } catch (error) {
-        console.error('Error updating organization details:', error);
-        res.status(500).send('Internal Server Error');
-    }
+//     } catch (error) {
+//         console.error('Error updating organization details:', error);
+//         res.status(500).send('Internal Server Error');
+//     }
 
+// });
+
+
+app.post('/addOrganisation', async (req, res) => {
+  const { orgName, email, phoneNumber, logo, instaHandles, twitterHandles, linkHandles, comments } = req.body;
+
+  try {
+      const user = req.session.user;
+
+      if (!user) {
+          return res.redirect('/login');
+      }
+
+      // Fetch the user document from the database
+      const existingUser = await User.findById(user._id);
+
+      if (!existingUser) {
+          return res.status(404).send('User not found');
+      }
+
+      // Update organization details in the user document
+      existingUser.orgName = orgName;
+      existingUser.email = email;
+      existingUser.phoneNumber = phoneNumber;
+      existingUser.logo = logo;
+      existingUser.instaHandles = instaHandles;
+      existingUser.twitterHandles = twitterHandles;
+      existingUser.linkHandles = linkHandles;
+      existingUser.comments = comments;
+
+      // Save the updated user document to the database
+      await existingUser.save();
+
+      // Update the organization details in the session
+      req.session.user = existingUser;
+
+      res.redirect('/displayOrganisation');
+  } catch (error) {
+      console.error('Error updating organization details:', error);
+      res.status(500).send('Internal Server Error');
+  }
 });
 
 
@@ -305,9 +392,15 @@ app.get('/displayOrganisation', (req, res) => {
 
     // Access organization details from the session
     const organization = req.session.organizationDetails || {};
+    // const user = req.session.user;
 
-    // Render the displayOrganization page and pass both user and organization information
+    // if (!user) {
+    //     return res.redirect('/login');
+    // }
+
+    // const organization = req.session.organizationDetails || {};
     res.render('pages/displayOrganisation', { user, organization });
+
 });
 
 
