@@ -81,14 +81,17 @@
     <div class="group-container">
 
         <% users.forEach(user => { %>
-            <div class="group">
+            <div class="group" >
+                <a href="displaySupportInfo">
                 <div class="groupContent">
                     <img class="groupImg" src="Images/img8.jpg" alt="Group 1 Image">
+                    </a>
                 </div>
                 <div class="groupContent">
                     <h3><%= user.username %></h3>
                     <p>Description of Group 1</p>
                 </div>
+                
             </div>
             <!-- <div class="group">
                 <div class="groupContent">
