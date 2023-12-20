@@ -1,7 +1,6 @@
 # Best-Friends
 A group of best friends coding the new world!!
 
-- @KOBI
 - BackEnd criteria to be met for your code to work 
 
 # You need to install 2 main things to get started
@@ -70,7 +69,7 @@ code for this is below
 
 
 
-# Donont touch!
+# Do not touch!
 Welcome  <%= user.username %>!</h2>
 <p><%= organization.orgName %></p>
 <p><%= organization.email %></p>
